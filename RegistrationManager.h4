@@ -1,0 +1,25 @@
+#ifndef REGISTRATION_MANAGER_H
+#define REGISTRATION_MANAGER_H
+
+#import <string>
+using namespace std;
+
+class RegistrationManager {
+public:
+  RegistrationManager() noexcept;
+
+  string managerRegistrationInfo[6];
+  string registrationDB[9];
+  int voterID = 00000000;
+  string form;
+
+
+  void setFormInfo(string formInfo[]);
+  void setForm(string formData);
+  void genID();
+  void storeInfo();
+  int returnSuccess();
+
+};
+
+#endif
