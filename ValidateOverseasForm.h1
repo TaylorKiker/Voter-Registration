@@ -1,0 +1,24 @@
+#ifndef VALIDATE_OVERSEAS_FORM_H
+#define VALIDATE_OVERSEAS_FORM_H
+
+#include "ValidateForm.h"
+
+using namespace std;
+
+class ValidateOverseasForm : public ValidateForm { // extends parent class ValidateForm
+public: 
+// put attributes and method headers here: 
+ValidateOverseasForm(); // default constructor 
+
+// example of an attribute: 
+// int number; 
+// example of a method header: 
+// void ValidateForm(parameterType parameterName);
+
+bool formIsValid;
+bool checkMilitary();
+string overseas;
+
+};
+
+#endif
